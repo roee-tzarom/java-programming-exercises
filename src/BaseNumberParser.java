@@ -1,4 +1,5 @@
-public class nothing {
+/** Converts a base-annotated number string into an integer value. */
+public class BaseNumberParser {
     public static int number2Int(String num) {
         int ans = -1;
         if (num == null || num.isEmpty()) {

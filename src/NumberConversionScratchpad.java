@@ -1,4 +1,5 @@
-public class test {
+/** Small manual test program for number-conversion experiments. */
+public class NumberConversionScratchpad {
     public static void main(String[] args) {
         String num = "012bA";
         bla(num);

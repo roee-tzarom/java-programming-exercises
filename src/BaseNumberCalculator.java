@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class nothingMain {
+/** Interactive calculator for numbers expressed in bases 2 through 16. */
+public class BaseNumberCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
