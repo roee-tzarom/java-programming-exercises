@@ -1,38 +1,32 @@
-# Java Programming Exercises
+# Java Fundamentals Lab
 
-A collection of introductory Java exercises covering number systems, basic algorithms and small object-oriented models. These are independent programs rather than one application.
+A collection of small Java programs that explores number representation, algorithms and object modeling. Each source group is independent, making it easy to review a single concept without launching a larger application.
 
-## Explore the code
+## Highlights
 
-| Area | Files | Concepts |
+| Area | Source | What it demonstrates |
 | --- | --- | --- |
-| Number-base calculator | `src/BaseNumberCalculator.java`, `src/BaseNumberParser.java`, `src/NumberConversionScratchpad.java` | Parsing, base conversion, arithmetic and comparison |
-| Basic algorithms | `src/Main.java`, `src/Interval.java` | Prime checking and interval modeling |
-| Objects and tests | `src/Book.java`, `src/BookTest.java` | A small domain class and test-style usage |
-| Exam practice | `src/exams_tests/` | Separate exercise implementations and sample tests |
+| Positional numbers | `BaseNumberCalculator.java`, `BaseNumberParser.java` | Validation, base conversion, comparison and arithmetic |
+| Conversion sketches | `NumberConversionScratchpad.java` | Small experiments with numeric notation |
+| Algorithms and ranges | `Main.java`, `Interval.java` | Control flow, prime-related logic and interval state |
+| Objects | `Book.java`, `BookTest.java` | Constructor state, accessors, mutation and usage checks |
 
-## Run an example
+The number-base calculator is the most complete interactive entry point. It asks for number strings and an output base, converts the values and prints the result. The other files contain smaller independent examples rather than a single shared application.
 
-With a JDK installed, run the standalone calculator from the repository root:
+## Try the calculator
+
+Install a JDK, then run from the repository root:
 
 ```bash
+mkdir -p out
 javac -d out src/BaseNumberCalculator.java
 java -cp out BaseNumberCalculator
 ```
 
-The calculator asks for two number strings and an output base. Several files contain their own `main` method and should be compiled and run separately. Some exam/test files need JUnit or other course setup; there is no unified build file for the entire collection.
+The program is interactive; enter values when prompted. Other classes with a `main` method can be run separately in a Java IDE. There is no Maven or Gradle configuration for a one-command build of every source file.
 
-This repository documents coursework and practice. Its routines are not presented as a validated numeric library.
+## How to read it
 
+Start with `BaseNumberCalculator.main` to see the user flow, then follow its parsing and conversion methods. The parser file shows a related approach to recognizing number formats. `Book` and `Interval` are short examples of keeping data and behavior together in classes. Some additional source trees contain standalone practice programs and may need separate test dependencies.
 
-## How to navigate the exercises
-
-The repository contains several small, separate entry points. `BaseNumberCalculator.java` is the most approachable interactive example: it asks for values and an output base, then performs number-base operations. `BaseNumberParser.java` and `NumberConversionScratchpad.java` expose related parsing and conversion practice. `Main.java` and `Interval.java` show introductory control flow and object modeling. `Book.java` and `BookTest.java` form a compact class-and-test example. The `exams_tests/` directory preserves additional independent practice problems.
-
-## What the code demonstrates
-
-These exercises show the transition from procedural loops and conditions to small objects with explicit state. For an evaluator, the useful evidence is the source and the input cases each `main` method handles. Compile one pair or program at a time because classes were written as separate assignments, not as a coordinated library. Test-named files may rely on JUnit or course-specific setup.
-
-## Boundaries
-
-There is no shared build system, package publication or comprehensive automated validation across the repository. Treat this as an introductory practice collection. If you want a larger Java application from this profile, the [block-breaker game](https://github.com/roee-tzarom/object-oriented-programming-java) and [spreadsheet coursework](https://github.com/roee-tzarom/java-foundations-projects) show more complete flows.
+This repository shows foundational Java reasoning through small programs. For larger end-to-end Java work, see the [spreadsheet engine](https://github.com/roee-tzarom/java-foundations-projects) and [block-breaker game](https://github.com/roee-tzarom/object-oriented-programming-java).
